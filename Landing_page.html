@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>  
+    <head> 
+        <style>
+            img {
+        display: block;
+        margin-left: 100px;
+        margin-right: 300px;
+        margin-top: 25px;
+        position: absolute;
+        }
+
+        </style>
         <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <meta name="viewport" content="width=device-width" />
@@ -38,10 +48,10 @@
                 Visualizations </a>
                 
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="Humidity.html">City Latitude vs. Humidity</a>
-                <a class="dropdown-item" href="Cloudiness.html">Cloudiness vs. Latitude</a>
-                <a class="dropdown-item" href="max_temp.html">Latitude vs. Max Temperature</a>
-                <a class="dropdown-item" href="WindSpeed.html">Wind Speed vs. Cloudiness</a>
+                <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                <a class="dropdown-item" href="Cloudiness.html">Latitude</a>
+                <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                <a class="dropdown-item" href="WindSpeed.html">Cloudiness</a>
               </div>
             </li>
           </ul>
@@ -50,18 +60,15 @@
     
     <!-- Content/Body -->
     <body>
-
-        <header>
-            <h1> Latitude Summary Analysis </h1>
-        </header>
-        
-        <div class="image">
-            <img src="https://apps-cdn.athom.com/app/nu.baretta.openweathermap/1/38df2fce-5388-47c9-bbf6-ba8052f6c2cb/drivers/owmCurrent/assets/images/large.png" alt="picture of OpenWeatherMap" id='website-logo'>
+        <div id="background">
+            <!-- <img src="https://openweather.co.uk/storage/app/media/we-are-pleased-announce-our-new-statistical-weather-data-api-now-available.png" alt="Image of Weather" id='Weather'> -->
         </div> 
             <section>
-                <div class="summary" style="float: center; display: block;"></div>
+                <div class="summary" style="float: center; display: block;">
+                <h1> Latitude Summary Analysis </h1>
                 <p> The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. </p>
-                <p>Assembling the database, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at include: temperature, cloudiness, wind speed, and humidity. This site provides the source data, visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>     
+                <p>Assembling the database, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at include: temperature, cloudiness, wind speed, and humidity. This site provides the source data, visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>   
+            </div>  
             </section>
         </div>  
         </main>
